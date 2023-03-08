@@ -71,7 +71,7 @@ function getPublicIp() {
     .then((data) => {
       console.log(data);
       currentCity = data.city;
-      getWeatherData(data.city, currentUnit, hourlyorWeek);
+      getWeatherData('dhaka', currentUnit, hourlyorWeek);
     })
     .catch((err) => {
       console.error(err);
